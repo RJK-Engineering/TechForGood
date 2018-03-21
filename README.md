@@ -4,7 +4,7 @@
 
 <h2>Links</h2>
 <p>MVO Nederland <a href="https://mvonederland.nl/event/tech-good-hackathon-track-trace-de-keten">https://mvonederland.nl</a></p>
-<p>Live demo:<a href="http://techforgood2.vps.codegorilla.nl" target="_blank">http://techforgood2.vps.codegorilla.nl</a>a></p>
+<p>Live demo:<a href="http://techforgood2.vps.codegorilla.nl" target="_blank">http://techforgood2.vps.codegorilla.nl</a></p>
 <p>GitHub: <a href="https://github.com/RJK-Engineering/TechForGood" target="_blank">https://github.com/RJK-Engineering/TechForGood</a></p>
 
 <h2>Partitians</h2>
