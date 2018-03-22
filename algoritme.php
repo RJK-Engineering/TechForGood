@@ -2,7 +2,7 @@
 
 class Input_form{
 
-  function __construct($leeftijd, $sekse, $opleiding, $etniciteit, $religie){
+  function __construct($name, $leeftijd, $sekse, $opleiding, $etniciteit, $religie){
 
    $this->leeftijd = $leeftijd;
    $this->sekse = $sekse;
