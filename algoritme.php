@@ -36,7 +36,7 @@ class Input_form{
 
 }
 
-$Marie = new Input_form(30, "Vrouw", "MBO", "Nederlands", "Katholiek");
+$Marie = new Input_form("Marie", 30, "Vrouw", "MBO", "Nederlands", "Katholiek");
 $Marie->isaccepted();
 
 ?>
