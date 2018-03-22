@@ -117,7 +117,7 @@ else{
                         <option value="5">Boeddhisme</option>
                     </select>
                 </div>
-                <input type="submit" name="submit" value="Sumbit" class="btn btn-primary pull-right">
+                <input type="submit" name="submit" value="Sla op!" class="btn btn-primary pull-right">
             </form>
         </div>
     </div>
@@ -125,4 +125,5 @@ else{
 <?php
 }// end of else submit
 ?>
+<a href="showall.php">Geef alle resultaten</a>
 </body>
