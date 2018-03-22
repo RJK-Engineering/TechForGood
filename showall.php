@@ -1,16 +1,6 @@
+<?php include ("includes/database.php");?>
+
 <?php
-//db aanpassen op juiste input
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "techforgood";
-
-$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-// Check connection
-if ($connection->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
 $sql = "SELECT id, achternaam, leeftijd, geslacht, school, afkomst, religie, resultaat, datum FROM input_form";
 $result = $conn->query($sql);
 
