@@ -1,6 +1,6 @@
 <?php
 //database opvragen
-$dbhost = "127.0.0.1:3307";
+$dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
 $dbname = "techforgood";
