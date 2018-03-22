@@ -1,5 +1,6 @@
 <?php include("includes/database.php");?>
 <?php include("includes/functions.php");?>
+<?php include("algoritme/algoritme.php");?>
 
 <head>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -57,7 +58,7 @@ else{
         <div class="form-area">
             <form method="post">
                 <br style="clear:both">
-                <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+                <h3 style="margin-bottom: 25px; text-align: center;">Jouw profiel</h3>
                 <div class="form-group">
                     <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Achternaam" required>
                 </div>
