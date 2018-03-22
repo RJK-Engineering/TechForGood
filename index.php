@@ -1,5 +1,6 @@
 <?php include("includes/database.php");?>
 <?php include("includes/functions.php");?>
+<?php include("algoritme/algoritme.php");?>
 
 <head>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -15,15 +16,25 @@
         $school = htmlentities($_POST['school']);
         $roots = htmlentities($_POST['roots']);
         $religion = htmlentities($_POST['religion']);
+        date_default_timezone_set("Europe/Amsterdam");
+        $date = date("Y-m-d H:i:s");
+        $corrupted = 0;
 
-        $query = "INSERT INTO `input_form` (`id`, `achternaam`, `leeftijd`, `geslacht`, `school`, `afkomst`, `religie`)
-                  VALUES (NULL, '$achternaam', '$leeftijd', '$geslacht', '$school', '$roots', '$religion')";
+        $Marie = new Input_form($leeftijd, $geslacht, $school, $roots, $religion);
+        $resultaat = $Marie->isaccepted();
+        $query = "INSERT INTO `input_form` (`id`, `achternaam`, `leeftijd`, `geslacht`, `school`,
+                              `afkomst`, `religie`,`resultaat`, `datum`, `corrupted`)
+                  VALUES (NULL, '$achternaam', '$leeftijd', '$geslacht', '$school', '$roots',
+                                '$religion','$resultaat', '$date', '$corrupted')";
         $result= mysqli_query($connection, $query);
+
+//        $Marie->isaccepted();
         ?>
         <table class="table">
             <thead>
             <tr>
                 <th scope="col"><b>Your Result</b></th>
+                <th scope="col"><?php $Marie->isaccepted();?></th>
             </tr>
             <tr>
                 <th scope="col">Achternaam</th>
@@ -59,17 +70,17 @@ else{
                 <br style="clear:both">
                 <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+                    <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Achternaam">
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control" id="leeftijd" name="leeftijd" placeholder="Leeftijd" required>
+                    <input type="number" class="form-control" id="leeftijd" name="leeftijd" placeholder="Leeftijd">
                 </div>
                 <div class="form-group">
                     <input type="radio" name="geslacht" value="man" checked>Man<br>
                     <input type="radio" name="geslacht" value="vrouw">Vrouw
                 </div>
                 <div class="form-group">
-                    <select name="school" class="form-control" required>
+                    <select name="school" class="form-control">
                         <option value="" selected disabled>Hoogst behaalde opleiding</option>
                         <option value="0">Veterstrikdiploma</option>
                         <option value="1">Basisschool</option>
@@ -83,7 +94,7 @@ else{
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="roots" class="form-control" required>
+                    <select name="roots" class="form-control">
                         <option value="" selected disabled>Afkomst</option>
                         <option value="0">Nederlands(Blank)</option>
                         <option value="1">Europeaan(Blank)</option>
@@ -96,7 +107,7 @@ else{
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="religion" class="form-control" required>
+                    <select name="religion" class="form-control">
                         <option value="" selected disabled>Uw Religie</option>
                         <option value="0">Niet Religieus</option>
                         <option value="1">Christelijk</option>
@@ -104,8 +115,6 @@ else{
                         <option value="3">Jood</option>
                         <option value="4">Rastafari</option>
                         <option value="5">Boeddhisme</option>
-                        <option value="6">Rock n Roll(90% baan garantie)</option>
-                        <option value="7">FC Groningen(110%)</option>
                     </select>
                 </div>
                 <input type="submit" name="submit" value="Sumbit" class="btn btn-primary pull-right">
