@@ -19,7 +19,7 @@
 
                 <form id="traffic" class="col-md-5">
                     <div class="col-md-5 pull-right">
-                        <img src="images/kruispunt.jpg">
+                        <img src="images/maija1.jpg">
                     </div>
                     <div class="form-group">
                         <tr>
