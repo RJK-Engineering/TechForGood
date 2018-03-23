@@ -31,10 +31,10 @@ function avoidSmallObjects(zebra, sideOfRoad) {
         result("Nothing happens");
     } else if (sideOfRoad == "") {
         result("Swerving onto side of the road missing " + zebra);
-    } else if (size[zebra] < size[sideOfRoad]) {
+    } else if (size[zebra] > size[sideOfRoad]) {
         result("Swerving onto side of the road missing " + zebra);
     } else {
-        result("Crash into " + sideOfRoad);
+        result("Crash into " + zebra);
     }
 }
 
@@ -51,5 +51,6 @@ function avoidChildren(zebra, sideOfRoad) {
 }
 
 function result(text) {
-    $('#result').text(text);
+    // $('#result').text(text);
+    window.alert(text);
 }
