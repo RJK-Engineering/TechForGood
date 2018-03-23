@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96bd75dc-f222-4742-8d8f-0ec6fd57eca2" name="Default" comment="" />
+    <list default="true" id="96bd75dc-f222-4742-8d8f-0ec6fd57eca2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/style.css" afterPath="$PROJECT_DIR$/stylesheets/style.css" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +17,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -66,10 +69,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" column="3" lean-forward="false" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+            <state relative-caret-position="1003">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
-                <marker date="1521773124401" expanded="true" signature="1017:1225" ph="INSERT INTO `input_form`... " />
+                <marker date="1521773435700" expanded="true" signature="1780:2091" ph="INSERT INTO `input_form`... " />
               </folding>
             </state>
           </provider>
@@ -195,7 +198,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17751000" />
+    <option name="totallyTimeSpent" value="18053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -331,7 +334,7 @@
         <state relative-caret-position="153">
           <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
-            <marker date="1521773124401" expanded="true" signature="1017:1225" ph="INSERT INTO `input_form`... " />
+            <marker date="1521773435700" expanded="true" signature="1780:2091" ph="INSERT INTO `input_form`... " />
           </folding>
         </state>
       </provider>
@@ -421,7 +424,7 @@
         <state relative-caret-position="272">
           <caret line="66" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
-            <marker date="1521773124401" expanded="true" signature="1017:1225" ph="INSERT INTO `input_form`... " />
+            <marker date="1521773435700" expanded="true" signature="1780:2091" ph="INSERT INTO `input_form`... " />
           </folding>
         </state>
       </provider>
@@ -436,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -482,10 +485,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="3" lean-forward="false" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+        <state relative-caret-position="1003">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <marker date="1521773124401" expanded="true" signature="1017:1225" ph="INSERT INTO `input_form`... " />
+            <marker date="1521773435700" expanded="true" signature="1780:2091" ph="INSERT INTO `input_form`... " />
           </folding>
         </state>
       </provider>
