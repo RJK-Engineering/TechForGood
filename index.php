@@ -31,7 +31,8 @@
                 <th scope="col"><b>Resultaat</b></th>
                 <th scope="col">
                     <?php if($resultaat){
-                        echo "Uitgenodigd";
+                        echo "<script type='text/javascript'>alert('Uitgenodigd!'</script>";
+
                     }else{
                         echo "Afgewezen";
                     }
@@ -108,7 +109,8 @@
                 </form>
             </div>
         </div>
-        <img src="images/AI.jpg" width="400px" style="margin: 100px 0 0 40px;">
+        <img src="images/maija2.png" width="25%" height="">
+        <img src="images/AI.jpg" width="25%" style="margin: 100px 0 0 40px;">
         <?php
     }// end of else submit
     ?>
