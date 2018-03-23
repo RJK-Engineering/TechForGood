@@ -1,0 +1,413 @@
+/* cmsms stylesheet: Ethischhacker_default modified: 14-01-16 12:56:13 */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.container {
+  width: 940px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clearfix {
+  clear: both;
+}
+h2 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+}
+h2 strong{
+  font-weight: 900;
+}
+
+h3{
+  font-size: 2em;
+}
+input[type="text"], input[type="email"], input[type="submit"], select {
+  border: none;
+  height: 37px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -webkit-border-radius:0; 
+  border-radius:0;
+}
+/* input[type="text"]:focus{
+  font-size: 14px;  Adding 16px on focus will prevent page zoom 
+} */
+input[type="submit"] {
+  height: 48px;
+  line-height: 45px;
+  width: 235px;
+  background-color: transparent;
+  margin-bottom: 0px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+input:focus {
+  outline-offset: 0px;
+  outline: none;
+}
+input:invalid {
+  box-shadow: 0 0 3px #f68a1f;
+}
+.form_student_return {
+  color: orange;
+  margin-top: 2em;
+  font-size: 18px;
+}
+.form_werkgever_return {
+    color: orange;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:  #5f717b;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:  #5f717b;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:  #5f717b;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #5f717b;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:  #5f717b;
+}
+
+#route_image {
+  background-position: center;
+  background-size: cover;
+  height: 210px;
+}
+div.website, div.website * {
+  display: none !important;
+}
+
+/* Header                  */  
+#header {
+  /*background-color: black;*/
+}
+.parallax-window{
+  background: transparent;
+  /*background-color: black;*/
+  /*background-image: url("https://www.ethisch-hacker.nl/uploads/images/ethischhacker_design/header.jpg");*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+}
+#header .container {
+  height: 680px;
+}
+#header #headerbalk {
+  margin-top: 290px;
+  width: 940px;
+  height: 100px;
+  background-color: #001d2d;
+  color: white;
+  line-height: 100px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+#header #headerbalk #headericons {
+  width: 307px;
+  height: 44px;
+  background-image: url("../../uploads/images/ethischhacker_design/header_icons.png");
+  position: absolute;
+  bottom: -33px;
+  left: 316px;
+}
+#header #logobalk {
+  margin-top: 210px;
+  padding-left: 290px;
+}
+#header #logobalk .link_philips{
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  margin-bottom: 12px;
+  background-image: url("../../uploads/images/ethischhacker_design/logo_philips.png");
+  background-repeat: none;
+}
+#header #logobalk .link_werkmans{
+  display: inline-block;
+  width: 53px;
+  height: 65px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-image: url("../../uploads/images/ethischhacker_design/logo_werkmans.png");
+  
+}
+#header #logobalk .link_sliminict{
+  display: inline-block;
+  width: 147px;
+  height: 40px;
+  margin-bottom: 12px;
+  background-image: url("../../uploads/images/ethischhacker_design/logo_sliminict.png");
+  
+}
+
+
+
+/* Content                  */  
+#content {
+  min-height: 200px;
+  padding: 10px 0px 30px;
+  background-color: white;
+}
+#content h1 {
+  color: #f9ab0e;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 26px 0px;
+}
+#content #contentform{
+  background-color: #ececec;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+}
+#content #contentform .title{
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+}
+#content #contentform .title strong{
+  font-weight: 900;
+}
+#content #contentform .text{
+  font-size: 14px;
+  text-align-last: justify;
+  -moz-text-align-last: justify;
+  color: #5b5b5b;
+  font-weight: 300;
+}
+#content #contentform input[type="text"], #content #contentform input[type="email"], #content #contentform input[type="submit"]{
+  font-weight: 400;
+}
+#content #contentform input[type="text"], #content #contentform input[type="email"]{
+  color: darkgray;
+  width: 200px;
+  float: left;
+  margin-top: 4px;
+  margin-right: 20px;
+  border: 1px solid #12273b;
+}
+#content #contentform input[type="text"]:focus, #content #contentform input[type="email"]:focus{
+  border-color: #0381c5;
+}
+#content #contentform .lastform input {
+  margin-right: 0px;
+}
+#content #contentform input[type="submit"]{
+  float: right;
+  background-color: orange;
+  background-image: url("../../uploads/images/ethischhacker_design/orange_background.png");
+  background-position: center;
+  color: white;
+}
+#content .contentblock {
+  width: 300px;
+  height: 335px;
+  float: left;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+#content #contentblock1 {
+  height: 386px;
+}
+#content #contentblock1 h3{
+  color: #f9ab0e;
+  margin-top: 1px;
+}
+#content #contentblock1 p{
+  line-height: 18px;
+}
+#content #contentblock2{
+  background-color: black;
+  background-image: url("../../uploads/images/ethischhacker_design/content_laptop.png");
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 386px;
+}
+#content #contentblock3{
+  background-color: #ececec;
+  width: 270px;
+  padding: 0px 12px 0 18px;
+  height: 386px;
+}
+#content #contentblock3 h3{
+  background-color: #ececec;
+  margin-top: 0.7em;
+  color: #0381c5;
+}
+#content #contentblock3 p{
+  line-height: 18px;
+}
+#content #contentblock4 img{
+  margin-left: -75px;
+}
+#content #contentblock5{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#content #contentblock5{
+  font-size: 2em;
+  color: #0381c5;
+  text-align: center;
+  font-weight: 700;
+}
+#content #contentblock4, #content #contentblock6 {
+  text-decoration: none;
+}
+#content #contentblock6 img{
+  margin-left: -62px;
+}
+span.button {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  width: 235px;
+  margin: 25px auto;
+  background-color: transparent;
+  border: 1px solid #0381c5;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+}
+span.button.disabled {
+  border: 1px solid transparent;
+}
+span.button:active {
+  border-color: #f68a1f;
+}
+span.button.disabled:active {
+  border-color: transparent;
+}
+#content #contentblock4:hover span.button, #content #contentblock6:hover span.button{
+  border-color: black;
+  background-color: #001D2D;
+  color: white;
+  cursor: pointer;
+}
+#content #contentblock4:hover span.button.disabled, #content #contentblock6:hover span.button{
+  border-color: transparent;
+  background-color: transparent;
+  color: black;
+  cursor: default;
+}
+
+/* Footer                  */          
+#footer {
+  min-height: 300px;
+  background-color: #001d2d;
+  padding: 30px 0px 250px
+}
+#footer h2{
+  color: #0381c5;
+  margin-bottom: 8px;
+}
+#footer #footerform{
+  min-height: 200px;
+  width: 620px;
+  float: left;
+  color: white;
+}
+#footer #footerform .formselectfield{
+  width: 49%;
+  display: inline-block;
+}
+#footer #footerform .formradiofield{
+  width: 49%;
+  float: right;
+  color: #5f717b;
+  line-height: 37px;
+}
+#footer #footerform .formradiofield>div{
+  display: inline-block;
+  width: 70px;
+}
+#footer #footerform .formradiofield>label{
+  width: 140px;
+  margin-left: 6px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#footer #footerform .formradiofield>div>label{
+  padding-left: 10px;
+}
+#footer #footerform input[type="text"], #footer #footerform input[type="email"], #footer #footerform select{
+  background-color: #1a3442;
+}
+#footer #footerform input[type="text"], #footer #footerform input[type="email"]{
+  color: #5f717b;
+  width: 100%;
+}
+#footer #footerform input[type="radio"]{
+  vertical-align: text-bottom;
+}
+#footer #footerform input[type="submit"]{
+  margin-top: 30px;
+  border: 1px solid #0381c5;
+  color: white;
+  font-size: 11px;
+}
+#footer #footerform input[type="submit"]:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+#footer #footerform input[type="submit"]:active{
+  border: 1px solid #f68a1f;
+}
+#footer #footerform select{
+  width: 100%;
+  color: #5f717b;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#footer #footerform input[type="text"]:focus, #footer #footerform input[type="email"]:focus, #footer #footerform select:focus {
+  background-color: white;
+  color: black;
+}
+#footer #footerblock{
+  min-height: 100px;
+  width: 280px;
+  padding: 6px 0px 10px 20px;
+  float: right;
+  color: white;
+  background-color: #f68a1f;
+  background-image: url("../../uploads/images/ethischhacker_design/orange_background.png");
+  background-position: bottom;
+}
+#footer #footerblock h3{
+  margin-left: 10px; 
+  margin-bottom: 0.5em; 
+}
+#footer #footerblock ul{
+  font-weight: 300;
+  list-style-image: url('../../uploads/images/ethischhacker_design/check.png');
+  padding-left: 26px;
+  font-size: 14px;
+}
+#footer #footerblock li{
+  padding-bottom: 10px;
+}

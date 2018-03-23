@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 22 Mar 2018 23:26:29 at https://www.ethisch-hacker.nl/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.ethisch-hacker.nl/ -O1 "C:\Users\raymo\Documents\GitRepositories\test httrack\techforgood" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:26:29	Warning: 	HTML file (752 bytes) retransferred due to lack of cache: https://www.ethisch-hacker.nl/
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 seconds : 18 links scanned, 17 files written (2252885 bytes overall), 17 files updated [2259045 bytes received at 282380 bytes/sec], 178 bytes transferred using HTTP compression in 1 files, ratio 100%, 2.0 requests per connection
+(No errors, 1 warnings, 0 messages)
