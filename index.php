@@ -6,8 +6,11 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
+  <div class="container">
 <?php
     if(isset($_POST['submit'])){
         $achternaam = htmlentities($_POST['achternaam']);
@@ -16,25 +19,15 @@
         $school = htmlentities($_POST['school']);
         $roots = htmlentities($_POST['roots']);
         $religion = htmlentities($_POST['religion']);
-        date_default_timezone_set("Europe/Amsterdam");
-        $date = date("Y-m-d H:i:s");
-        $corrupted = 0;
 
-        $Marie = new Input_form($leeftijd, $geslacht, $school, $roots, $religion);
-        $resultaat = $Marie->isaccepted();
-        $query = "INSERT INTO `input_form` (`id`, `achternaam`, `leeftijd`, `geslacht`, `school`,
-                              `afkomst`, `religie`,`resultaat`, `datum`, `corrupted`)
-                  VALUES (NULL, '$achternaam', '$leeftijd', '$geslacht', '$school', '$roots',
-                                '$religion','$resultaat', '$date', '$corrupted')";
+        $query = "INSERT INTO `input_form` (`id`, `achternaam`, `leeftijd`, `geslacht`, `school`, `afkomst`, `religie`)
+                  VALUES (NULL, '$achternaam', '$leeftijd', '$geslacht', '$school', '$roots', '$religion')";
         $result= mysqli_query($connection, $query);
-
-//        $Marie->isaccepted();
         ?>
         <table class="table">
             <thead>
             <tr>
                 <th scope="col"><b>Your Result</b></th>
-                <th scope="col"><?php $Marie->isaccepted();?></th>
             </tr>
             <tr>
                 <th scope="col">Achternaam</th>
@@ -63,24 +56,28 @@
     }//end of if submit 1st form
 else{
 ?>
-<div class="container">
+
     <div class="col-md-5">
+      <h1 style="text-align: center;">Test jouw profiel!</h1>
         <div class="form-area">
             <form method="post">
                 <br style="clear:both">
-                <h3 style="margin-bottom: 25px; text-align: center;">Jouw profiel</h3>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Achternaam">
+                <p style="margin-bottom: 25px; text-align: center;">Vul hier persoonsgegevens in om te zien of jij op gesprek kunt komen bij dit bedrijf.</p>
+                <div class="form-group, achternaam">
+                    <input type="text" class="form-control" id="achternaam" name="achternaam" placeholder="Achternaam" required>
                 </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="leeftijd" name="leeftijd" placeholder="Leeftijd">
+                <br>
+                <div class="form-group, leeftijd">
+                    <input type="number" class="form-control" id="leeftijd" name="leeftijd" placeholder="Leeftijd" required>
                 </div>
-                <div class="form-group">
+                <br>
+                <div class="form-group, gender">
                     <input type="radio" name="geslacht" value="man" checked>Man<br>
                     <input type="radio" name="geslacht" value="vrouw">Vrouw
                 </div>
-                <div class="form-group">
-                    <select name="school" class="form-control">
+                <br>
+                <div class="form-group, school">
+                    <select name="school" class="form-control" required>
                         <option value="" selected disabled>Hoogst behaalde opleiding</option>
                         <option value="0">Veterstrikdiploma</option>
                         <option value="1">Basisschool</option>
@@ -93,8 +90,9 @@ else{
                         <option value="8">WO</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <select name="roots" class="form-control">
+                <br>
+                <div class="form-group, afkomst">
+                    <select name="roots" class="form-control" required>
                         <option value="" selected disabled>Afkomst</option>
                         <option value="0">Nederlands(Blank)</option>
                         <option value="1">Europeaan(Blank)</option>
@@ -106,8 +104,9 @@ else{
                         <option value="7">Aziatisch(Mongoloïde)</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <select name="religion" class="form-control">
+                <br>
+                <div class="form-group, religion">
+                    <select name="religion" class="form-control" required>
                         <option value="" selected disabled>Uw Religie</option>
                         <option value="0">Niet Religieus</option>
                         <option value="1">Christelijk</option>
@@ -115,15 +114,22 @@ else{
                         <option value="3">Jood</option>
                         <option value="4">Rastafari</option>
                         <option value="5">Boeddhisme</option>
+                        <option value="6">Rock n Roll(90% baan garantie)</option>
+                        <option value="7">FC Groningen(110%)</option>
                     </select>
                 </div>
-                <input type="submit" name="submit" value="Sla op!" class="btn btn-primary pull-right">
+                <br />
+                <input type="submit" name="submit" value="Bekijk de uitkomst" class="btn btn-primary pull-right">
             </form>
         </div>
     </div>
+
+    <img src="images/AI.jpg" width="400px" style="margin: 100px 0 0 40px;">
+</div>
+<div style="text-align: center; padding-bottom:20px;">
+  <p cl>Deze website is ontwikkeld door CodeGorilla tijdens de HackForGood 2018</p>
 </div>
 <?php
 }// end of else submit
 ?>
-<a href="showall.php">Geef alle resultaten</a>
 </body>
