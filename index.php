@@ -1,7 +1,7 @@
 <?php include("includes/database.php");?>
 <?php include("includes/functions.php");?>
 <?php include("algoritme/algoritme.php");?>
-
+<html>
 <head>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -118,3 +118,4 @@
 <!--<a href="philips%20website/techforgood/www.ethisch-hacker.nl/index.html">Philips link</a>-->
 
 </body>
+</html>

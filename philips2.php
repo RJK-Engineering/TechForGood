@@ -1,4 +1,5 @@
 <?php include ("includes/database.php");?>
+<html>
 <head>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="stylesheets/style-showall.css" rel="stylesheet">
@@ -6,7 +7,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="includes/js/showall-table.js"></script>
 </head>
-<body style="font-size: 6 ">
+<body>
 
 <div class="container">
     <div class="panel panel-primary">
@@ -62,3 +63,8 @@
                 <td style="color: green">Geaccepteerd</td>
             </tr>
             </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
