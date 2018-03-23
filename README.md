@@ -7,7 +7,7 @@
 <p>Live demo:<a href="http://techforgood2.vps.codegorilla.nl" target="_blank">http://techforgood2.vps.codegorilla.nl</a></p>
 <p>GitHub: <a href="https://github.com/RJK-Engineering/TechForGood" target="_blank">https://github.com/RJK-Engineering/TechForGood</a></p>
 
-<h2>Partitians</h2>
+<h2>Participants</h2>
 <ul>
 	<li>Esmeralda Tijhoff</li>
 	<li>Germain Christina</li>
@@ -15,5 +15,5 @@
 	<li>Maija Grudule</li>
 	<li>Raymond Kolen</li>
 	<li>Rob Klinkhamer</li>
-</ul>	
+</ul>
 
