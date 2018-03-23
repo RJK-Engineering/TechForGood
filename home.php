@@ -1,6 +1,3 @@
-<?php include("includes/database.php");?>
-<?php include("includes/functions.php");?>
-<?php include("algoritme/algoritme.php");?>
 <html>
 <head>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -11,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <a href="showall.php"><img src="images\AI.jpg"></a>
+          <a href="showall.php"><img src="images\DataProof_logo-100.jpg"></a>
         </div>
       </div>
     </div>
