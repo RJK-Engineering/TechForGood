@@ -20,33 +20,33 @@ var size = {
 
 function doNothing(zebra, sideOfRoad) {
     if (zebra == "") {
-        result("Nothing happens");
+        result("Er gebeurd niets");
     } else {
-        result("Crash into " + zebra);
+        result("Rijdt in op " + zebra);
     }
 }
 
 function avoidSmallObjects(zebra, sideOfRoad) {
     if (zebra == "") {
-        result("Nothing happens");
+        result("Er gebeurd niets");
     } else if (sideOfRoad == "") {
-        result("Swerving onto side of the road missing " + zebra);
+        result("Ontwijkt zebrapad en mist " + zebra);
     } else if (size[zebra] < size[sideOfRoad]) {
-        result("Swerving onto side of the road missing " + zebra);
+        result("Ontwijkt zebrapad en mist " + zebra);
     } else {
-        result("Crash into " + sideOfRoad);
+        result("Rijdt in op " + sideOfRoad);
     }
 }
 
 function avoidChildren(zebra, sideOfRoad) {
     if (zebra == "") {
-        result("Nothing happens");
+        result("Er gebeurd niets");
     } else if (sideOfRoad == "") {
-        result("Swerving onto side of the road missing " + zebra);
+        result("Ontwijkt zebrapad en mist " + zebra);
     } else if (zebra == "kind") {
-        result("Swerving onto side of the road missing " + zebra);
+        result("Ontwijkt zebrapad en mist " + zebra);
     } else {
-        result("Crash into " + zebra);
+        result("Rijdt in op " + zebra);
     }
 }
 
