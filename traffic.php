@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Traffic</title>
+    <title>Verkeer</title>
 </head>
 <body>
     <form id="traffic">
@@ -26,12 +26,12 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Strategy:</label><br>
-            <input type="radio" name="strategy" value="doNothing" checked> Do Nothing<br>
-            <input type="radio" name="strategy" value="avoidSmallObjects"> Avoid Small Objects<br>
-            <input type="radio" name="strategy" value="avoidChildren"> Avoid Children<br>
+            <label>Zelfrijdende Auto algoritme:</label><br>
+            <input type="radio" name="strategy" value="doNothing" checked> Niets doen<br>
+            <input type="radio" name="strategy" value="avoidSmallObjects"> Vermijd kleine objecten<br>
+            <input type="radio" name="strategy" value="avoidChildren"> Vermijd kinderen<br>
         </div>
-        <button class="go">Go</button>
+        <button class="go">Ga</button>
     </form>
     <div id="result"></div>
 
