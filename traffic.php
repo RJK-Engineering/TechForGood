@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Traffic</title>
+    <title>Verkeer</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -13,7 +13,7 @@
     <div class="row">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">Traffic Simulator</h3>
+                <h3 class="panel-title">Zelf Rijdende Auto Simulator</h3>
             </div>
             <table class="table table-hover">
 
@@ -47,14 +47,14 @@
                     </div>
                     <div class="form-group">
                         </tr>
-                        <label>Strategy:</label><br>
-                        <input type="radio" name="strategy" value="doNothing" checked> Do Nothing<br>
-                        <input type="radio" name="strategy" value="avoidSmallObjects"> Avoid Small Objects<br>
-                        <input type="radio" name="strategy" value="avoidChildren"> Avoid Children<br>
+                        <label>Beslissing algoritme:</label><br>
+                        <input type="radio" name="strategy" value="doNothing" checked> Doe niets<br>
+                        <input type="radio" name="strategy" value="avoidSmallObjects"> Vermijd kleine objecten<br>
+                        <input type="radio" name="strategy" value="avoidChildren"> Vermijd kinderen<br>
                         </tr>
                     </div>
 
-                    <button class="go btn-info">Go</button>
+                    <button class="go btn-info">Ga</button>
                 </form>
             </table>
             <!--    <div id="result"></div>-->

@@ -31,10 +31,10 @@ function avoidSmallObjects(zebra, sideOfRoad) {
         result("Nothing happens");
     } else if (sideOfRoad == "") {
         result("Swerving onto side of the road missing " + zebra);
-    } else if (size[zebra] > size[sideOfRoad]) {
+    } else if (size[zebra] < size[sideOfRoad]) {
         result("Swerving onto side of the road missing " + zebra);
     } else {
-        result("Crash into " + zebra);
+        result("Crash into " + sideOfRoad);
     }
 }
 
