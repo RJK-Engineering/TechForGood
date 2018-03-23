@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <a href="showall_traffic.php"><img src="images\ongeluk.gif"></a>
+          <a href="showall_traffic.php"><img src="images\DataProof_logo-100.jpg"></a>
         </div>
       </div>
     </div>
