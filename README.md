@@ -17,4 +17,5 @@
 	<li>Rob Klinkhamer</li>
 </ul>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1XvJWiOkW4A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Bekijk ons idee op youtube:
+<p><a href="https://youtu.be/1XvJWiOkW4A" target="_blank">https://youtu.be/1XvJWiOkW4A</a></p>
